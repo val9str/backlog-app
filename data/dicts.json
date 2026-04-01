@@ -1,1 +1,8 @@
-
+{
+  "series": [],
+  "gameCategories": [],
+  "purchaseRates": {
+    "usd": 90,
+    "eur": 100
+  }
+}
