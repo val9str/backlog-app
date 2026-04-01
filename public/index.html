@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backlog App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Backlog App</h1>
+    <nav>
+      <button class="nav-btn" data-page="games">Игры</button>
+      <button class="nav-btn" data-page="media">Медиа</button>
+      <button class="nav-btn" data-page="purchases">Покупки</button>
+      <button class="nav-btn" data-page="dicts">Справочники</button>
+      <button class="nav-btn" data-page="log">Лог</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- GAMES -->
+    <section id="page-games" class="page">
+      <h2>Игры</h2>
+      <div id="games-form"></div>
+      <div id="games-filters"></div>
+      <div id="games-list" class="cards"></div>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="page-media" class="page" style="display:none;">
+      <h2>Медиа</h2>
+      <div id="media-form"></div>
+      <div id="media-filters"></div>
+      <div id="media-list" class="cards"></div>
+    </section>
+
+    <!-- PURCHASES -->
+    <section id="page-purchases" class="page" style="display:none;">
+      <h2>Покупки</h2>
+      <div id="purchases-rates"></div>
+      <div id="purchases-form"></div>
+      <div id="purchases-list" class="cards"></div>
+    </section>
+
+    <!-- DICTS -->
+    <section id="page-dicts" class="page" style="display:none;">
+      <h2>Справочники</h2>
+      <div id="dicts-content"></div>
+    </section>
+
+    <!-- LOG -->
+    <section id="page-log" class="page" style="display:none;">
+      <h2>Лог действий</h2>
+      <div id="log-list" class="cards"></div>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/purchases.js"></script>
+  <script src="js/dicts.js"></script>
+  <script src="js/log.js"></script>
+
+</body>
+</html>
 
